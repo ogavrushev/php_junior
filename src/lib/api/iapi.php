@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib\Api;
+namespace RateApp\Lib;
 
 interface iApi {
     public function get(string $url) : mixed;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib\Store;
+namespace RateApp\Store;
 
 interface iStore {
     public function get(int $id) : string;
