@@ -1,8 +1,15 @@
 <?php
 
-namespace RateApp\Store;
+namespace RateApp\Lib\Store;
 
 interface iStore {
-    public function get(int $id) : string;
-    public function set(int $id, string $data) : bool;
+    /**
+     * Get data from store
+     */
+    public function get(string $key) : ?string;
+    
+    /**
+     * Set data to store
+     */
+    public function set(string $key, string $data) : bool;
 }
